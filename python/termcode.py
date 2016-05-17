@@ -1,4 +1,7 @@
 class term_codes:
+    """
+    NOT Y2k COMPLIANT!
+    """
     def __init__(self):
         term_codes = []
         for x in range(100):
