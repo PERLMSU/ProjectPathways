@@ -1,0 +1,26 @@
+These are networkx diagrams of the required physics courses. I will also include my Python notebook and Excel sheets.
+
+In some cases, students may take 1 of 2, 2 of 3, etc, courses.
+For example, physics students are required to take either Optics (PHY431) OR Electronics (PHY440).
+Additionally, physics students are required to take 2 of the following: 
+Intro to Condensed Matter Physics (PHY491), Intro to Nuclear Physics (PHY492), and Intro to Elementary Particle Physics (PHY493).
+
+Files with limN in the name indicate that if any edge between two nodes (courses) has less than N students, that edge will not be shown.
+Example: phy_crse_progression_hl_lim5.pdf will show a networkx diagram with edges eliminated if that course progression has less than 5 
+students. 
+
+If 2 courses have students that go between both courses, the number of students going from the first course will be displayed closer to the arrow pointing at the second course.
+Example: some students take Physics 2 and then Physics Lab 1, and others take Physics Lab 1 and then Physics 2.
+(PHYSICS 2)<<--[#stu taking Physics 2 after Physics Lab 1]------------------[#stu taking Physics Lab 1 after Physics 2]-->>(PHYSICS LAB 1)
+
+Edges and arrows are color coded based on the node/course that the edge is coming from. 
+Example: Course A is a blue node. It should have blue edges emitting from the node.
+
+The weighted diagrams mean that the edge widths are weighted based on the number of students that go between 2 courses.
+Example: 100 students go from Course A to Course B, 20 go from Course A to Course C, and 2 go from Course A to Course D. 
+The edge between Course A and Course B will be wider than the edge between Course A and Course C, which will be wider than the edge between Course A and Course D.
+
+The bold diagrams have the most common path from each course have much wider edges.
+Example from above: The edge from Course A to Course B should be wider than the edges between Course A and Course C, and between Course A and Course D. The edge between Course A and Course C should have the same width as the edge between Course A and Course D. 
+
+Note: If the text in the diagrams is too small (it most likely is) then download it and zoom in
